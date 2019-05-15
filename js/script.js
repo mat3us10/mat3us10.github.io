@@ -143,7 +143,7 @@ function carregar_jogo(indice, inicial) {
                 document.getElementById('opcoes').innerHTML = conteudo + '<a onclick="(verifica('+ inicial + ',' + j + ',' + indice + '))"> <div class="opcao" id="opcao1">'+
                 '<p>' + vetor_de_perguntas[inicial].opcoes[j] + '</p> </div> </a>'
         }
-    }, 50);
+    }, 100);
 }
 else {
     document.getElementById('cabecalho_h1').innerHTML = 'Parabéns ' + vetor_de_jogadores[indice].nome;
@@ -205,7 +205,7 @@ function carregar_login(parametro) {
                 '<input class="button_cadastro" onclick="login(0)" value="entrar">' +
                 '</form>'
         }
-    }, 50)
+    }, 100)
 }
 
 //funcao para fazer o login
