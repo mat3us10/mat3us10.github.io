@@ -20,7 +20,7 @@ function funcao_atualiza_dados() {
 function carregar_home() {
     httpRequest.open('GET', './arquivos/home.html', true);
     httpRequest.send(null);
-    setTimeout(carregar_pontos, 50);
+    setTimeout(carregar_pontos, 100);
 }
 
 //funcao para carregar os pontos
@@ -44,7 +44,7 @@ function carregar_pontos() {
 function carregar_simulado() {
     httpRequest.open('GET', './arquivos/lista_de_jogadores.html', true);
     httpRequest.send(null);
-    setTimeout(carregar_jogadores, 50, [0]); //0 para iniciar jogo
+    setTimeout(carregar_jogadores, 100, [0]); //0 para iniciar jogo
 }
 
 //funcao para carregar os jogadores
@@ -125,7 +125,7 @@ function enviar_dados(parametro) {
             vetor_de_perguntas.push(pergunta);
         }
     }
-    setTimeout(carregar_home, 50);
+    setTimeout(carregar_home, 100);
 }
 
 //funcao para carregar o jogo
@@ -164,14 +164,14 @@ function verifica(inicial, j, indice){
 function carregar_lista_jogadores() {
     httpRequest.open('GET', './arquivos/lista_de_jogadores.html', true);
     httpRequest.send(null);
-    setTimeout(carregar_jogadores, 50, [1]); //1 para carregar o login
+    setTimeout(carregar_jogadores, 100, [1]); //1 para carregar o login
 }
 
 //funcao para carregar a lista de perguntas
 function carregar_lista_perguntas() {
     httpRequest.open('GET', './arquivos/lista_de_perguntas.html', true);
     httpRequest.send(null);
-    setTimeout(carregar_perguntas, 50);
+    setTimeout(carregar_perguntas, 100);
 }
 
 //funcao para carregar as perguntas
